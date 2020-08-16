@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+make mkfn_stb
+install -D mkfn_stb "$1/usr/bin/mkfn_stb"
+

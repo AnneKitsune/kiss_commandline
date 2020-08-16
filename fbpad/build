@@ -1,0 +1,27 @@
+#!/bin/sh -e
+
+patch -p1 < config.patch
+
+make
+
+FP="/usr/share/fonts/TTF"
+OP="-h32 -w18"
+SZ="35h100v100r-0c0b0a1"
+
+/usr/bin/mkfn_stb $OP $FP/DejaVuSansMono.ttf:$SZ > ar.tf
+/usr/bin/mkfn_stb $OP $FP/DejaVuSansMono-Oblique.ttf:$SZ > ai.tf
+/usr/bin/mkfn_stb $OP $FP/DejaVuSansMono-Bold.ttf:$SZ > ab.tf
+
+mkdir -p /usr/share/fonts/tf/
+
+install -D ar.tf "$1/usr/share/fonts/tf/ar.tf"
+install -D ai.tf "$1/usr/share/fonts/tf/ai.tf"
+install -D ab.tf "$1/usr/share/fonts/tf/ab.tf"
+
+tic -x fbpad-256
+
+install -D fbpad "$1/usr/bin/fbpad"
+
+echo "Add the following line to your shell startup script for 256 color mode:"
+echo "export TERM=fbpad-256"
+

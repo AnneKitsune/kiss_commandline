@@ -1,0 +1,3 @@
+git+https://repo.or.cz/fbpad#52b6bed1d8ce6357992e8fff6d53fef3c9fb047c
+patches/config.patch
+files/fbpad-256

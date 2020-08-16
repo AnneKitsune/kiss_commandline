@@ -1,0 +1,32 @@
+diff --git a/conf.h b/conf.h
+index f70d25e..49e5ce1 100644
+--- a/conf.h
++++ b/conf.h
+@@ -7,7 +7,7 @@
+ 
+ /* programs mapped to m-c, m-m, m-e */
+ #define SHELL		{"sh"}
+-#define EDITOR		{"vi"}
++#define EDITOR		{"nvim"}
+ #define MAIL		{"mailx", "-f", "+inbox"}
+ 
+ /* TERM variable for launched programs */
+@@ -17,13 +17,13 @@
+ typedef unsigned int fbval_t;
+ 
+ /* tinyfont files for regular, italic, and bold fonts */
+-#define FR		"/path/to/font.tf"
+-#define FI		NULL
+-#define FB		NULL
++#define FR		"/usr/share/fonts/tf/ar.tf"
++#define FI		"/usr/share/fonts/tf/ar.tf"
++#define FB		"/usr/share/fonts/tf/ar.tf"
+ 
+ /* foreground and background colors */
+-#define FGCOLOR		COLOR0
+-#define BGCOLOR		COLORF
++#define FGCOLOR		COLORF
++#define BGCOLOR		COLOR0
+ 
+ /* where to write the screen shot */
+ #define SCRSHOT		"/tmp/scr"
