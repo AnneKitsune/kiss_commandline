@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+
+make
+
+install -D fbv "$1/usr/bin/fbv"
+install -Dm 0644 fbv.1 "$1/usr/share/man/man1/fbv.1"
+
