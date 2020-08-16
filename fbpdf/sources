@@ -1,0 +1,2 @@
+git+https://github.com/aligrudi/fbpdf#f59002487edba502aaa93e9aec3bb6ebbbe41b0e
+patches/disable_deps.patch
