@@ -8,9 +8,9 @@ FP="/usr/share/fonts/TTF"
 OP="-h32 -w18"
 SZ="35h100v100r-0c0b0a1"
 
-/usr/bin/mkfn_stb $OP $FP/DejaVuSansMono.ttf:$SZ > ar.tf
-/usr/bin/mkfn_stb $OP $FP/DejaVuSansMono-Oblique.ttf:$SZ > ai.tf
-/usr/bin/mkfn_stb $OP $FP/DejaVuSansMono-Bold.ttf:$SZ > ab.tf
+/usr/bin/mkfn_stb $OP $FP/LiberationMono-Regular.ttf:$SZ > ar.tf
+/usr/bin/mkfn_stb $OP $FP/LiberationMono-Italic.ttf:$SZ > ai.tf
+/usr/bin/mkfn_stb $OP $FP/LiberationMono-Bold.ttf:$SZ > ab.tf
 
 mkdir -p /usr/share/fonts/tf/
 
